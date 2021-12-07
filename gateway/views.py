@@ -35,7 +35,7 @@ class RequestTransaction(views.APIView):
                 "transaction_redirect_url": data["transaction_redirect_url"]
             }
 
-            hash_salt="JPHX1187AEA68DE9D6DCC"
+            hash_salt="hash salt"
             hash_body=sha256_convert.json_to_sha256_with_salt(request_body,hash_salt)
 
             response=onepay_service.request_transaction(request_body,hash_body)
@@ -68,6 +68,7 @@ class WebHookView(views.APIView):
         try:
 
             data = request.data
+
             onepay_transaction_id = data["onepay_transaction_id"]
             merchant_transaction_id = data["merchant_transaction_id"]
             hash_body = data["hash"]

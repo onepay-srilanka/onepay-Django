@@ -12,7 +12,7 @@ def request_transaction(request_body,hash_body):
 
     headers = {
         'Content-Type': 'application/json',
-        'Authorization': "438092d19904343b0baa6d77376a22df6ff2b104ec9a524098b7406f5e50e3e07a9fceeadd0ff522.FXMS1187AEA68DE9D6DF1"
+        'Authorization': app_token
     }
 
     try:
