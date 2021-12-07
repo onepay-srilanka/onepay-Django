@@ -1,0 +1,10 @@
+Django==2.2
+requests==2.21.0
+boto3==1.9.208
+botocore==1.12.208
+djangorestframework==3.10.2
+django_storages==1.7.1
+django-cors-headers==3.0.2
+setuptools-rust==0.12.1
+django-environ==0.4.5
+
